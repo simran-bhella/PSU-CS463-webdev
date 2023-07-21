@@ -37,7 +37,7 @@ nav {
 }
 
 h1 {
-  margin: 10;
+  margin: 10px;
 }
 
 ul {
@@ -98,6 +98,7 @@ button {
 button:hover {
   background-color: var(--violetred);
 }
+
 /* Code for exercise 03-table */
 table {
   width: 100%;
@@ -143,7 +144,6 @@ label {
   margin-top: 10px;
 }
 
-/* Update input styles to have rounded black outline boxes */
 input {
   width: 100%;
   padding: 10px;
@@ -153,17 +153,6 @@ input {
   font-size: 1em;
 }
 
-/* Arrange form elements side by side */
-form div {
-  margin-bottom: 10px;
-}
-
-/* Move the pronouns section closer to the multiple choice with radio on the left side */
-form .pronouns {
-  margin-left: 10px;
-}
-
-/* Style the preferred pronouns list */
 ul.pronoun-list {
   list-style: none;
   margin: 0;
@@ -174,7 +163,11 @@ ul.pronoun-list li {
   margin: 5px 0;
 }
 
-/* Update button styles */
+ul.pronoun-list label {
+  display: flex;
+  align-items: flex-start;
+}
+
 button {
   padding: 10px 20px;
   border: none;

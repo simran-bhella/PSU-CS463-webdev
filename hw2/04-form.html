@@ -35,33 +35,40 @@
         <label for="dob">Date of Birth</label>
         <input type="date" id="dob" name="dob" required />
 
-        <label>Preferred Pronouns</label>
-        <ul class="pronoun-list">
-          <li>
-            <label>
-              <input type="radio" name="pronouns" value="he/him" required />
-              He/Him
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="radio" name="pronouns" value="she/her" required />
-              She/Her
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="radio" name="pronouns" value="they/them" required />
-              They/Them
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="radio" name="pronouns" value="not_say" required />
-              I Prefer Not to Say
-            </label>
-          </li>
-        </ul>
+        <fieldset>
+          <legend>Preferred Pronouns</legend>
+          <ul class="pronoun-list">
+            <li>
+              <label>
+                <input type="radio" name="pronouns" value="he/him" required />
+                He/Him
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="pronouns" value="she/her" required />
+                She/Her
+              </label>
+            </li>
+            <li>
+              <label>
+                <input
+                  type="radio"
+                  name="pronouns"
+                  value="they/them"
+                  required
+                />
+                They/Them
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="pronouns" value="not_say" required />
+                Prefer Not to Say
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
         <button type="submit" class="primary-button">Submit</button>
         <button type="reset" class="secondary-button">Reset</button>
