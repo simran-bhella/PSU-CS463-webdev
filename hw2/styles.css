@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -27,9 +27,179 @@ form {
 }
 
 /* Code for exercise 01-navbar */
+nav {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1 {
+  margin: 10;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: var(--violetred);
+}
 
 /* Code for exercise 02-cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+}
 
+.card {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--black);
+  max-width: 300px;
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+button {
+  background-color: var(--black);
+  color: var(--white);
+  border: var(--black);
+  border-radius: 5px;
+  padding: 10px 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--violetred);
+}
 /* Code for exercise 03-table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  background-color: var(--white);
+  padding: 10px;
+  text-align: center;
+}
+
+td.channel {
+  background-color: var(--violetred);
+  color: var(--white);
+  font-weight: bold;
+}
+
+tbody tr:hover td.show:not(:first-child) {
+  background-color: var(--orange);
+}
+
+td.show {
+  border: 1px solid var(--black);
+}
 
 /* Code for exercise 04-form */
+form {
+  width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Update input styles to have rounded black outline boxes */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Arrange form elements side by side */
+form div {
+  margin-bottom: 10px;
+}
+
+/* Move the pronouns section closer to the multiple choice with radio on the left side */
+form .pronouns {
+  margin-left: 10px;
+}
+
+/* Style the preferred pronouns list */
+ul.pronoun-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.pronoun-list li {
+  margin: 5px 0;
+}
+
+/* Update button styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+.primary-button {
+  background-color: black;
+  color: #fefefe;
+}
+
+.primary-button:hover {
+  background-color: var(--violetred);
+}
+
+.secondary-button {
+  background-color: var(--white);
+  color: var(--black);
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--black);
+}
+
+.secondary-button:hover {
+  background-color: lightgray;
+}
